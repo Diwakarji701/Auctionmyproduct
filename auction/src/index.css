@@ -1,0 +1,112 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+.App{
+    /*padding: 0.5rem 3.5rem;*/
+    overflow: hidden;
+    color: var(--black);    
+}
+.body{
+  background-color: rgba(234,237,237);
+  flex: none;
+  width: fit-content;
+}
+.button {
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+}
+.button:hover {
+  background: white;
+  cursor: pointer;
+  color: var(--orange);
+}
+
+
+/* *******Navbar****** */
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n-left {
+  padding-left: 3rem;
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+.dropdown-content {
+  display: none;
+  font-size: 1.2rem;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.n-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 380;
+}
+.n-list {
+  padding-left: 2rem;
+  flex: 3;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  justify-content:end;
+  margin-right: 1.8rem;
+}
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+.n-button {
+  flex: 2;
+}
+

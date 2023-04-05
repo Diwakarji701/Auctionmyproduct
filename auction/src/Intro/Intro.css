@@ -1,0 +1,59 @@
+.Intro {
+ /* background-image:url("C:\Users\Dell\Desktop\auction project\reactapp\src\img\banner1.jpg");
+  background-image: auto;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  display: flex;
+  height: 81vh;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-left:6rem;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 5rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 4rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 1.4rem;
+  color: var(--black);
+  margin-top: 10px;
+}
+.i-button {
+  width: 9.2rem;
+  height: 2.1rem;
+  margin-left:9rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+/* right side styling */
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > :nth-child(1) {
+  transform: scale(1.4);
+  width: 33vw;
+  margin-top: 5rem;
+  height: 60vh;
+}
